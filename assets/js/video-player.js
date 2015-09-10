@@ -14,17 +14,26 @@ function initMediaPlayer() {
 $('#play-toggle').click(function() {
         if(mediaPlayerDOM.paused){
             mediaPlayerDOM.play();
-            this.title = 'pause';
-            this.innerHTML = 'pause';
-            this.className = 'pause';
+            toggleButton(this,'pause');
         }
         else{
             mediaPlayerDOM.pause();
-            this.title = 'play';
-            this.innerHTML = 'play';
-            this.className = 'play';
+            toggleButton(this,'play');
         }
-    });
+});
+
+$('#stop-button').click(function(){
+    if(mediaPlayerDOM.currentTime !=0 && !mediaPlayerDOM.paused)
+        $('#play-toggle').trigger('click');
+    mediaPlayerDOM.currentTime = 0;
+
+});
+
+function toggleButton(button, value){
+    button.title = value;
+    button.innerHTML = value;
+    button.className = value;
+}
 
 function togglePlayPause(){
     var button = $('play-toggle');
