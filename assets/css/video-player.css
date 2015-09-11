@@ -1,0 +1,28 @@
+
+.content {
+  position: relative;
+  width: 400px;
+}
+.content video {
+  border-radius: 20px;
+}
+.content::before {
+  content: '<p>wow</p>';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.video{
+    float:left;
+    margin: 40px;
+}
+.video_overlays {
+    position:absolute;
+    float:left;
+    width: 100%;
+    height: 100%; 
+    min-height:370px;
+    background-color: rgba(0,0,0, 1);
+}
