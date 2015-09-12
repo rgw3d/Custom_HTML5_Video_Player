@@ -54,13 +54,4 @@ function togglePlayPause(){
 
 function addOverlay(){
     $('#video-player').append("<div id='overlay'></div>");
-    $('#overlay').css({
-        'position': 'absolute',
-        'top': 0,
-        'left': 0,
-        'width': '100%',
-        'z-index': 5000,
-        'opacity': 0.5,
-        'background-color': 'gray'
-    }).height($('#video-player').height());
 }
