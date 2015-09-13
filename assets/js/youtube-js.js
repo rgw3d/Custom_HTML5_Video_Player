@@ -30,6 +30,7 @@ function onPlayerStateChange(event){
         done = true;
     }
     function stopVideo(){
+        addOverlay();
         player.stopVideo();
     }
 

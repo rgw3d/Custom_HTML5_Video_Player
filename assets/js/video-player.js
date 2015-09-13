@@ -53,5 +53,5 @@ function togglePlayPause(){
 }    
 
 function addOverlay(){
-    $('#container').append("<div id='overlay'></div>");
+    $('#container').append("<div id='overlay'><div class='interior_overlay'><form>First name:<br><input type='text' name='firstname'><br>Last name:<br><input type='text' name='lastname'></form></div></div>");
 }
