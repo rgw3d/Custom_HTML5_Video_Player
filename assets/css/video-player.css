@@ -27,7 +27,13 @@
 }
 
 #container{
-    overflow:hidden;
     position: relative;
-    display: inline-block;
+    display: block;
+    margin: auto;
+    width: 50%;
 }
+
+#player{
+    position: relative;
+}
+
